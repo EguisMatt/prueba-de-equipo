@@ -158,9 +158,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #ffffff; }
 a:hover {
-  color: #0FA0CE; }
+  color: #050000; }
 
 
 /* Buttons
@@ -170,6 +170,21 @@ button,
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+  }
+/* aqui la animacion */
+.button:hover {
+  box-shadow: 0 0 40px 40px #e73cc2 inset;}
+  .botto:hover:hover{
+    color: #fff;
+    outline: 0;}
+  
+  .button{
+    box-shadow: 0 0 40px 40px #e73cc2 inset;
+  }
+
+/* aqui la forma del boton */
+.button{
   display: inline-block;
   height: 38px;
   padding: 0 30px;
@@ -184,43 +199,17 @@ input[type="button"] {
   white-space: nowrap;
   background-color: transparent;
   border-radius: 4px;
-  border: 1px solid #bbb;
+  border: 1px solid #bbbbbb;
   cursor: pointer;
-  box-sizing: border-box; }
-.button:hover,
-button:hover,
-input[type="submit"]:hover,
-input[type="reset"]:hover,
-input[type="button"]:hover,
-.button:focus,
-button:focus,
-input[type="submit"]:focus,
-input[type="reset"]:focus,
-input[type="button"]:focus {
-  color: #333;
-  border-color: #888;
-  outline: 0; }
-.button.button-primary,
-button.button-primary,
-input[type="submit"].button-primary,
-input[type="reset"].button-primary,
-input[type="button"].button-primary {
-  color: #FFF;
-  background-color: #33C3F0;
-  border-color: #33C3F0; }
-.button.button-primary:hover,
-button.button-primary:hover,
-input[type="submit"].button-primary:hover,
-input[type="reset"].button-primary:hover,
-input[type="button"].button-primary:hover,
-.button.button-primary:focus,
-button.button-primary:focus,
-input[type="submit"].button-primary:focus,
-input[type="reset"].button-primary:focus,
-input[type="button"].button-primary:focus {
-  color: #FFF;
-  background-color: #1EAEDB;
-  border-color: #1EAEDB; }
+  box-sizing: border-box;
+}
+
+.button:hover{
+  box-shadow: 0 0 10px purple ,0 0 40px purple , 0 0 80px purple ;
+}
+
+
+
 
 
 /* Forms
@@ -251,7 +240,7 @@ input[type="url"],
 input[type="password"],
 textarea {
   -webkit-appearance: none;
-     -moz-appearance: none;
+    -moz-appearance: none;
           appearance: none; }
 textarea {
   min-height: 65px;
